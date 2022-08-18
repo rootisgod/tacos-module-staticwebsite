@@ -1,6 +1,6 @@
 resource "local_file" "index" {
-    content  = "<!DOCTYPE html><HTML><HEAD><TITLE>${var.static_website_name}</TITLE><H1>THIS IS: ${var.static_website_name}</H1>"
-    filename = "index.html"
+  content  = "<!DOCTYPE html><HTML><HEAD><TITLE>${var.static_website_name}</TITLE><H1>THIS IS: ${var.static_website_name}</H1>"
+  filename = "index.html"
 }
 
 resource "azurerm_storage_account" "this" {
